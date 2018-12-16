@@ -30,8 +30,11 @@ angular.module('phonecatApp').
         }
     });
 
-    angular.module('phonecatApp').
+angular.module('phonecatApp').
     component('greeting', {
         template:
-            '<span>Hello</span>' 
+            '<span>Hello, {{$ctrl.user}}</span>',
+        controller: function Greeting() {
+            this.user = 'Arsenic';
+        }
     });
