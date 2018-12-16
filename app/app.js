@@ -1,10 +1,10 @@
 'use strict'
 
 //define the phonecatApp module
-var phonecatApp = angular.module('phonecatApp','craete');
+var phonecatApp = angular.module('phonecatApp',[]);
 
 //defien the PhoneListController contorller on the phonecatApp
-phonecatApp.controller('PhoneListController', function PhoneListController($scope){
+phonecatApp.controller('PhoneListController', function PhoneListController($scope) {
     $scope.phones = [
         {
           name: 'Nexus S',
@@ -17,4 +17,4 @@ phonecatApp.controller('PhoneListController', function PhoneListController($scop
           snippet: 'The Next, Next Generation tablet.'
         }
       ];
-})
+});

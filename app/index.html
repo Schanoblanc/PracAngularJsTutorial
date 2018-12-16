@@ -1,12 +1,14 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="phonecatApp">
   <head>
     <meta charset="utf-8">
     <title>My HTML File</title>
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
     <script src="lib/angular/angular.js"></script>
     <script src="app.js"/>
   </head>
+  
   <body ng-controller="PhoListController">
     <ul>
       <li ng-repeat=" phone in phones">
