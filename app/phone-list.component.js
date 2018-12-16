@@ -1,5 +1,5 @@
 'use strict';
-
+angular.module('phonecatApp', []);
 // Register `phoneList` component, 
 // along with its associated controller and template
 angular.module('phonecatApp').
@@ -28,4 +28,10 @@ angular.module('phonecatApp').
             ];
 
         }
+    });
+
+    angular.module('phonecatApp').
+    component('greeting', {
+        template:
+            '<span>Hello</span>' 
     });
