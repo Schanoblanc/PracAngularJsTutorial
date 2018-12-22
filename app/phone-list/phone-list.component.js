@@ -9,6 +9,7 @@ angular.module('phoneList').
             self.orderProp = 'age';
             $http.get('phones/phones.json').then(function(response){
                 self.phones = response.data;
+                // slice can be add after for only show part of data
             });
 
         }]
