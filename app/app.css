@@ -50,10 +50,10 @@ body {
   margin: 1em;
 }
 
-/* the after may not be for runtime css */
 .specs {
   clear: both;
   list-style: none;
+  /* border: 1px solid black; */
   margin: 0;
   padding: 0;
 }
@@ -64,6 +64,7 @@ body {
 
 .specs > li {
   display: inline-block;
+  border: 1px solid black;
   vertical-align: top;
   width: 200px;
 }
