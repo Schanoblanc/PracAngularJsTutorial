@@ -4,11 +4,21 @@
 <head>
     <meta charset="utf-8">
     <title>Arsenic PhoneCat</title>
+    <!-- Defines CSS necessary for animations -->
+    <link rel="stylesheet" href="app.animations.css" />
+    <!-- Used for JavaScript animations (include this before angular.js) -->
+    <!-- <script src="lib/jquery/dist/jquery.js"></script> -->
+    <!--  -->
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="app.css" />
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-route/angular-route.js"></script>
     <script src="lib/angular-resource/angular-resource.js"></script>
+    <!-- Adds animation support in AngularJS -->
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <!-- Defines JavaScript animations -->
+    <script src="app.animations.js"></script>
+    <!-- code -->
     <script src="app.module.js"></script>
     <script src="app.config.js"></script>
     <script src="phone-list/phone-list.module.js"></script>
@@ -22,17 +32,10 @@
 </head>
 
 <body>
-    <!-- Some Angular built in filter -->
-    <!-- {{'lower cap string' | uppercase}}
-        <pre>{{{foo: 'bar', baz: 42} | json}}</pre>
-        {{1459461289000 | date}}
-        {{1459461289000 | date:'MM/dd/yyyy @ h:mma'}} -->
 
-    <!-- use input model to try angular built in filter -->
-    <!-- <input ng-model="userInput" /> Uppercased: {{userInput | uppercase}} -->
-
-    <!-- Use a custom component to render a list of phones -->
-    <div ng-view></div>
+    <div class="view-container">
+        <div ng-view class="view-frame"></div>
+    </div>
 
 </body>
 
