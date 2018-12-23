@@ -20,10 +20,14 @@
 
 <body>
     <!-- Some Angular built in filter -->
-        <!-- {{'lower cap string' | uppercase}}
+    <!-- {{'lower cap string' | uppercase}}
         <pre>{{{foo: 'bar', baz: 42} | json}}</pre>
         {{1459461289000 | date}}
         {{1459461289000 | date:'MM/dd/yyyy @ h:mma'}} -->
+
+    <!-- use input model to try angular built in filter -->
+    <input ng-model="userInput" /> Uppercased: {{userInput | uppercase}}
+
     <!-- Use a custom component to render a list of phones -->
     <div ng-view></div>
 
